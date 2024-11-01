@@ -1,0 +1,104 @@
+body {
+    background-color: #121212; /* Deep dark background */
+    color: #e0e0e0; /* Light grey text for better readability */
+    font-family: 'Arial', sans-serif;
+    overflow-x: hidden;
+}
+
+.nav-link {
+    color: #e0e0e0; /* Soft white for nav links */
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #4caf50; /* Green highlight on hover */
+}
+
+.cols {
+    border: 2px solid #333333; /* Softer border color */
+    background-color: #1e1e1e; /* Slightly lighter than body background */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.row {
+    height: 100vh;
+}
+
+.container-fluid {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.bioside {
+    display: flex;
+    align-items: center;
+}
+
+.name {
+    color: #ffffff; /* Pure white for main headings */
+}
+
+span {
+    color: #4caf50; /* Green accent color */
+}
+
+.smallbio{
+    color: white; /* Slightly muted text for body content */
+}
+
+.social a {
+    color: #4caf50; /* Green color for social links */
+    margin-right: 15px;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #45a049; /* Slightly darker green on hover */
+}
+
+.buttons {
+    gap: 15px;
+}
+
+.buttons a {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons a:hover {
+    background-color: #45a049;
+}
+
+
+.mypic{
+    width: 100%;
+    height: 50%;
+}
+
+@media screen and (max-width: 768px) {
+    .bioside {
+        display: block;
+        text-align: center;
+    }
+    body{
+        overflow-x: hidden;
+    }
+   main{
+    overflow-x: hidden;
+   }
+    .buttons {
+        justify-content: center;
+    }
+   
+}
+
+.mypic img {
+    width: 500px; /* Set a specific width */
+    height: 500px; /* Set a specific height */
+     object-fit: cover; /* Ensures the image fills the circle */
+}
