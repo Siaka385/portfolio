@@ -15,7 +15,7 @@ body {
 }
 
 .cols {
-    border: 2px solid #333333; /* Softer border color */
+
     background-color: #1e1e1e; /* Slightly lighter than body background */
     border-radius: 8px; /* Rounded corners */
 }
@@ -44,6 +44,11 @@ span {
 
 .smallbio{
     color: white; /* Slightly muted text for body content */
+}
+
+.bio{
+    width: 90%;
+    margin-left: 10%;
 }
 
 .social a {
@@ -84,6 +89,10 @@ span {
     .bioside {
         display: block;
         text-align: center;
+        margin-top: 5%;
+    }
+    .pics{
+        padding: 10%;
     }
     body{
         overflow-x: hidden;
@@ -95,10 +104,17 @@ span {
         justify-content: center;
     }
    
+   .mypic img {
+    width: 200px; /* Set a specific width */
+    height: 200px; /* Set a specific height */
+     object-fit: cover; /* Ensures the image fills the circle */
+}
+
+   
 }
 
 .mypic img {
-    width: 500px; /* Set a specific width */
-    height: 500px; /* Set a specific height */
+    width: 400px; /* Set a specific width */
+    height: 400px; /* Set a specific height */
      object-fit: cover; /* Ensures the image fills the circle */
 }
