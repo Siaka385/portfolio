@@ -41,13 +41,16 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 1</a>
+                            <a class="nav-link" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 2</a>
+                            <a class="nav-link" href="#abt">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Link 3</a>
+                            <a class="nav-link" href="#proj">Project</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#cont">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -56,7 +59,7 @@
         </header>
         <main>
             <div class="container-fluid pt-2 home">
-                <div class="row">
+                <div class="row home">
                     <div class="col-md-6 col-12 cols order-2 order-md-1 bioside bioo">
                         <div class="bio">
                             <div class="nameandprofession mb-4">
@@ -91,8 +94,294 @@
                             <img class="rounded-circle" src="placeholder.jpg" alt="New York" style="max-width: 100%; height: auto;">
                         </div>
                     </div>
-                    
                 </div>
+
+
+
+                <div class="row about"  id="abt" >
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="about-title">About <span>Me</span></h2>
+                    </div>
+                    <div class="col-md-6 about-text">
+                        <h3>Software Developer & Problem Solver</h3>
+                        <p>With a passion for creating elegant solutions, I specialize in full-stack development and building user-centric applications. My journey in software development began with a curiosity for technology and has evolved into a professional pursuit of excellence.</p>
+                        <div class="skills-section" >
+                            <h4>My Skills</h4>
+                            <div class="skill-bars">
+                                <div class="skill">
+                                    <span class="skill-name">Frontend Development</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 90%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill-name">Backend Development</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 85%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill">
+                                    <span class="skill-name">Database Management</span>
+                                    <div class="progress">
+                                        <div class="progress-bar" style="width: 80%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 about-stats">
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <h4>2+</h4>
+                                <p>Years Experience</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>50+</h4>
+                                <p>Projects Completed</p>
+                            </div>
+                            <div class="stat-item">
+                                <h4>5+</h4>
+                                <p>Languages Known</p>
+                                <div class="languages">
+                                    <span>JavaScript</span>
+                                    <span>Python</span>
+                                    <span>Java</span>
+                                    <span>PHP</span>
+                                    <span>SQL</span>
+                                </div>
+                            </div>
+                            <div class="stat-item achievement">
+                                <h4>🏆</h4>
+                                <p>Google I/O Kisumu</p>
+                                <span class="achievement-detail">2024 Hackathon Winner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+<!-- 
+                <div class="row Experience">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">My <span>Experience</span></h2>
+                    </div>
+                    <div class="timeline-container">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2023 - Present</div>
+                                <h3>Software Developer</h3>
+                                <h4>Company Name</h4>
+                                <ul>
+                                    <li>Developed and maintained full-stack web applications using modern technologies</li>
+                                    <li>Collaborated with cross-functional teams to deliver high-quality software solutions</li>
+                                    <li>Implemented responsive design principles and ensured cross-browser compatibility</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2022 - 2023</div>
+                                <h3>Junior Developer</h3>
+                                <h4>Previous Company</h4>
+                                <ul>
+                                    <li>Assisted in the development of web-based applications</li>
+                                    <li>Participated in code reviews and implemented feedback</li>
+                                    <li>Worked on bug fixes and performance improvements</li>
+                                </ul>
+                            </div>
+                        </div>
+                
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-date">2021 - 2022</div>
+                                <h3>Intern Developer</h3>
+                                <h4>Internship Company</h4>
+                                <ul>
+                                    <li>Gained hands-on experience with modern web technologies</li>
+                                    <li>Contributed to team projects under senior developer guidance</li>
+                                    <li>Developed and maintained documentation</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <div class="row projects" id="proj">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">My <span>Projects</span></h2>
+                    </div>
+                    
+                    <div class="col-12 mb-4">
+                        <div class="project-filters">
+                            <button class="filter-btn active" data-filter="all">All</button>
+                            <button class="filter-btn" data-filter="web">Web Apps</button>
+                            <button class="filter-btn" data-filter="mobile">Mobile Apps</button>
+                            <button class="filter-btn" data-filter="other">Other</button>
+                        </div>
+                    </div>
+                
+                    <div class="project-grid">
+                        <!-- Project Card 1 -->
+                        <div class="project-card" data-category="web">
+                            <div class="project-img">
+                                <img src="/api/placeholder/400/300" alt="Project 1">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                        <a href="#" class="project-github">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>E-Commerce Platform</h3>
+                                <p>A full-stack e-commerce solution with payment integration</p>
+                                <div class="project-tags">
+                                    <span>React</span>
+                                    <span>Node.js</span>
+                                    <span>MongoDB</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Project Card 2 -->
+                        <div class="project-card" data-category="mobile">
+                            <div class="project-img">
+                                <img src="/api/placeholder/400/300" alt="Project 2">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                        <a href="#" class="project-github">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Fitness Tracker App</h3>
+                                <p>Mobile app for tracking workouts and nutrition</p>
+                                <div class="project-tags">
+                                    <span>React Native</span>
+                                    <span>Firebase</span>
+                                    <span>Redux</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Project Card 3 -->
+                        <div class="project-card" data-category="web">
+                            <div class="project-img">
+                                <img src="/api/placeholder/400/300" alt="Project 3">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                        <a href="#" class="project-github">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>Task Management System</h3>
+                                <p>Collaborative task management platform with real-time updates</p>
+                                <div class="project-tags">
+                                    <span>Vue.js</span>
+                                    <span>Laravel</span>
+                                    <span>MySQL</span>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <!-- Project Card 4 -->
+                        <div class="project-card" data-category="other">
+                            <div class="project-img">
+                                <img src="/api/placeholder/400/300" alt="Project 4">
+                                <div class="project-overlay">
+                                    <div class="project-links">
+                                        <a href="#" class="project-link">
+                                            <i class="fas fa-link"></i>
+                                        </a>
+                                        <a href="#" class="project-github">
+                                            <i class="fab fa-github"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <h3>AI Image Generator</h3>
+                                <p>Machine learning model for generating artistic images</p>
+                                <div class="project-tags">
+                                    <span>Python</span>
+                                    <span>TensorFlow</span>
+                                    <span>Flask</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                
+                <div class="row contact" id="cont">
+                    <div class="col-12 text-center mb-5">
+                        <h2 class="section-title">Contact <span>Me</span></h2>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div class="contact-details">
+                                    <h3>Email</h3>
+                                    <p>teddysiaka.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div class="contact-details">
+                                    <h3>Phone</h3>
+                                    <p>+254 XXX XXX XXX</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="contact-details">
+                                    <h3>Location</h3>
+                                    <p>Kisumu, Kenya</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Subject" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="submit-btn">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+
+
+
+
             </div>
             
             
