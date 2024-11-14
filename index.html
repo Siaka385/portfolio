@@ -18,9 +18,11 @@
         />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/style.css">
     </head>
-
+   
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
     <body>
         <header>
           <!-- A grey horizontal navbar that becomes vertical on small screens -->
@@ -57,12 +59,12 @@
         </nav>
         </header>
         <main>
-            <div class="container-fluid pt-2 home">
+            <div class="container-fluid pt-2">
                 <div class="row home">
                     <div class="col-12 cols">
                         <div class="bio">
                             <div class="pic">
-                            <img class="rounded-circle img-fluid myimage" src="placeholder.jpg" alt="image" id="images">
+                            <img class="rounded-circle img-fluid myimage" src="pictures/profile.jpeg" alt="image" id="images">
                             </div>
                             <div class="nameandprofession mb-4">
                                 <h1 class="name">
@@ -88,8 +90,10 @@
                 
                             <!-- Buttons d-flex justify-content-center-->
                             <div class="buttons b">
-                                <button type="button" class="btn btn-outline-primary me-3">Contact Me</button>
-                                <button type="button" class="btn btn-outline-success">Projects</button>
+                                <button type="button" class="btn btn-outline-primary me-3"><a href="#cont" style="background-color:transparent;">Contact Me</a></button>
+                                <button type="button" class="btn btn-outline-success">
+                                    <a href="#proj" style="background-color: transparent;">projects</a>
+                                </button>
                             </div>
 
 
@@ -228,12 +232,12 @@
                         <!-- Project Card 1 -->
                         <div class="project-card" data-category="web">
                             <div class="project-img">
-                                <img src="/api/placeholder/400/300" alt="Project 1">
+                                <img src="pictures/groupietracker.jpeg" alt="Project 1">
                                 <div class="project-overlay">
                                     <div class="project-links">
-                                        <a href="https://github.com/Siaka385/groupiie-tracker" class="project-link">
+                                        <!-- <a href="https://github.com/Siaka385/groupiie-tracker" class="project-link">
                                             <i class="fas fa-link"></i>
-                                        </a>
+                                        </a> -->
                                         <a href="https://github.com/Siaka385/groupiie-tracker" class="project-github">
                                             <i class="fab fa-github"></i>
                                         </a>
@@ -242,11 +246,11 @@
                             </div>
                             <div class="project-info">
                                 <h3>Groupie tracker</h3>
-                                <p>A website with api intergration</p>
+                                <p>Groupie Tracker is a dynamic website featuring integrated APIs to bring you up-to-date information on your favorite bands. Explore band profiles, view tour dates, and learn more about band members in one place. Perfect for music fans looking to stay connected to the world of bands.</p>
                                 <div class="project-tags">
                                     <span>Golang</span>
                                     <span>javascript</span>
-                                    //<span>MongoDB</span>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -254,25 +258,25 @@
                         <!-- Project Card 2 -->
                         <div class="project-card" data-category="mobile">
                             <div class="project-img">
-                                <img src="/api/placeholder/400/300" alt="Project 2">
+                                <img src="pictures/riddle.jpeg" alt="Project 2">
                                 <div class="project-overlay">
                                     <div class="project-links">
-                                        <a href="#" class="project-link">
+                                        <!-- <a href="#" class="project-link">
                                             <i class="fas fa-link"></i>
-                                        </a>
-                                        <a href="#" class="project-github">
+                                        </a> -->
+                                        <a href="https://github.com/Siaka385/Riddle_ToD" class="project-github">
                                             <i class="fab fa-github"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="project-info">
-                                <h3>Fitness Tracker App</h3>
-                                <p>Mobile app for tracking workouts and nutrition</p>
+                                <h3>Riddle Realm of Dread</h3>
+                                <p>Riddle Realm of Dread is an interactive website where users can dive into a world of challenging and mind-bending riddles. Test your wit, sharpen your problem-solving skills, and compete with friends to solve riddles across different levels of difficulty. Perfect for puzzle lovers looking for a quick mental challenge or a deep riddle-solving experience</p>
                                 <div class="project-tags">
-                                    <span>React Native</span>
-                                    <span>Firebase</span>
-                                    <span>Redux</span>
+                                    <span>javascript</span>
+                                    <span>Bootstrap</span>
+                                    <!-- <span>Redux</span> -->
                                 </div>
                             </div>
                         </div>
@@ -280,54 +284,30 @@
                         <!-- Project Card 3 -->
                         <div class="project-card" data-category="web">
                             <div class="project-img">
-                                <img src="/api/placeholder/400/300" alt="Project 3">
+                                <img src="pictures/kilimochain.jpeg" alt="Project 3">
                                 <div class="project-overlay">
                                     <div class="project-links">
-                                        <a href="#" class="project-link">
+                                        <!-- <a href="#" class="project-link">
                                             <i class="fas fa-link"></i>
-                                        </a>
-                                        <a href="#" class="project-github">
+                                        </a> -->
+                                        <a href="https://github.com/Siaka385/kilimoblockchain" class="project-github">
                                             <i class="fab fa-github"></i>
                                         </a>
                                     </div>
                                 </div>
                             </div>
                             <div class="project-info">
-                                <h3>Task Management System</h3>
-                                <p>Collaborative task management platform with real-time updates</p>
+                                <h3>Kilimo chain </h3>
+                                <p>[Your Website Name] is an online platform dedicated to safe and secure transactions for agricultural products. We connect farmers, suppliers, and buyers with a focus on quality assurance, transparency, and a seamless user experienc</p>
                                 <div class="project-tags">
-                                    <span>Vue.js</span>
-                                    <span>Laravel</span>
-                                    <span>MySQL</span>
+                                    <span>Golang</span>
+                                    <span>JavaScript</span>
+                                    <!-- <span>MySQL</span> -->
                                 </div>
                             </div>
                         </div>
                 
-                        <!-- Project Card 4 -->
-                        <div class="project-card" data-category="other">
-                            <div class="project-img">
-                                <img src="/api/placeholder/400/300" alt="Project 4">
-                                <div class="project-overlay">
-                                    <div class="project-links">
-                                        <a href="#" class="project-link">
-                                            <i class="fas fa-link"></i>
-                                        </a>
-                                        <a href="#" class="project-github">
-                                            <i class="fab fa-github"></i>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-info">
-                                <h3>AI Image Generator</h3>
-                                <p>Machine learning model for generating artistic images</p>
-                                <div class="project-tags">
-                                    <span>Python</span>
-                                    <span>TensorFlow</span>
-                                    <span>Flask</span>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
 
@@ -343,14 +323,14 @@
                                 <i class="fas fa-envelope"></i>
                                 <div class="contact-details">
                                     <h3>Email</h3>
-                                    <p>teddysiaka.com</p>
+                                    <p>teddysiakaogola@gmail.com</p>
                                 </div>
                             </div>
                             <div class="contact-item">
                                 <i class="fas fa-phone"></i>
                                 <div class="contact-details">
                                     <h3>Phone</h3>
-                                    <p>+254 XXX XXX XXX</p>
+                                    <p>+254 750 217 750</p>
                                 </div>
                             </div>
                             <div class="contact-item">
@@ -365,16 +345,16 @@
                     <div class="col-md-6">
                         <form class="contact-form">
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Your Name" required>
+                                <input type="text" name="user_name" class="form-control" style="color: white;" placeholder="Your Name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" class="form-control" placeholder="Your Email" required>
+                                <input type="email" name="user_email" class="form-control" style="color: white;" placeholder="Your Email" required>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject" required>
+                                <input type="text" name="subject" class="form-control" style="color: white;" placeholder="Subject" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control" rows="5" placeholder="Your Message" required></textarea>
+                                <textarea name="message" class="form-control" rows="5" style="color: white;" placeholder="Your Message" required></textarea>
                             </div>
                             <button type="submit" class="submit-btn">Send Message</button>
                         </form>
@@ -409,6 +389,6 @@
             crossorigin="anonymous"
         ></script>
 
-        <script defer src="script.js"></script>
+        <script defer src="js/script.js"></script>
     </body>
 </html>

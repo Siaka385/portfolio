@@ -29,7 +29,7 @@ window.onload = () => {
                 printName();
             }
         }
-    }, 4000);
+    }, 3200);
     function printName() {
         let index = 0;
 
@@ -120,4 +120,23 @@ window.onload = () => {
            btn.classList.add("moveup")
     }
 
+
+
+
+//contact and email sending
+    (function() {
+        emailjs.init({
+          publicKey: "G5S0EtznWQej2PFaN",
+        });
+    })();
+
+    document.querySelector('.contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('service_e34t85l', 'template_2lmoen8', this)
+            .then(() => {
+                alert("Email sent successfully");
+            }, (error) => {
+                console.log('FAILED...', error);
+            });
+    });
 };
