@@ -24,7 +24,7 @@ This portfolio is built using:
 
 ## How to View the Portfolio
 
-You can view the portfolio by cloning the repository to view it locally:
+You can view the portfolio live [here](https://portfolio-teddy-siaka-ogola.vercel.app/)  or clone the repository to view it locally:
 
 ```bash
 git clone https://github.com/Siaka385/portfolio.git
