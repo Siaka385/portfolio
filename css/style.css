@@ -332,26 +332,6 @@ span  {
     display: block;
     margin-top: 5px;
 }
-/* 
-@media screen and (max-width: 1200px) {
-    .about-title{
-        font-size: 20px;
-        margin-bottom: -150px;
-    }
-    .about-text h3{
-        font-size: 20px;
-    }
-    .stats-grid {
-        flex-direction: column;
-        align-items: center;
-    }
-    .about{
-        height: auto;
-    }
-   
-
-    
-} */
 
 
 
@@ -813,22 +793,17 @@ span  {
     margin-bottom: 20px;
     
 }
-input{
-    color: white;
-}
 
 .form-control {
     width: 100%;
     padding: 12px;
     border: none;
-    background-color: #333;
-    color: #ffffff;
+    color: gray;
     border-radius: 4px;
     transition: background-color 0.3s ease;
 }
 
 .form-control:focus {
-    background-color: #404040;
     outline: none;
 }
 
@@ -847,9 +822,20 @@ textarea.form-control {
     width: 100%;
 }
 
+input::placeholder {
+    color:red;
+    opacity: 1;
+}
+
+.form-control:focus {
+    border: 1px solid #4caf50;
+}
+
+
 .submit-btn:hover {
     background-color: #45a049;
 }
+
 
 /* Responsive Styles */
 @media screen and (max-width: 768px) {
@@ -881,17 +867,13 @@ textarea.form-control {
     }
 }
 
-/* Placeholder Styles */
-::placeholder {
-    color: #999;
-}
 
-/* Focus States */
-.form-control:focus {
-    border: 1px solid #4caf50;
-}
 
-/* Animation for Timeline */
+
+
+
+
+/* EXperienc style */
 .timeline-item {
     opacity: 0;
     transform: translateY(20px);
