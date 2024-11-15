@@ -29,7 +29,7 @@ window.onload = () => {
                 printName();
             }
         }
-    }, 3200);
+    }, 3100);
     function printName() {
         let index = 0;
 
