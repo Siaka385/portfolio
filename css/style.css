@@ -62,44 +62,64 @@ span  {
     
 }
 
-.myimage{
+.myimage {
     height: 350px;
     width: 350px;
     border-style: double;
     border: 10px #4caf50 solid;
-    animation-name: colorborder;
-    animation-duration: 2s;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in-out;
+    animation: colorborder 3s ease-in-out forwards,
+               shadowEffect 3s ease-in-out forwards;
     
-}
-
-@keyframes colorborder{
-    0%{
-        border-top-color: white;
-       border-bottom-color: white;
-       opacity: 0;
+    box-shadow: 0 0 15px 5px rgba(76, 175, 80, 0.1);
+  }
+  
+  @keyframes colorborder {
+    0% {
+      border-top-color: white;
+      border-bottom-color: white;
+      border-left-color: white;
+      opacity: 0;
     }
-    25%{
-        opacity: 0.25;
-
+    25% {
+      border-top-color: white;
+      border-bottom-color: white;
+      border-left-color: #4caf50;
+      border-right-color: #4caf50;
+      opacity: 0.25;
     }
-    50%{
-        border-top-color: #4caf50;
-        border-bottom-color: #4caf50;
-        border-left-color: white;
-        border-right-color: white;
-        opacity: 0.5;
+    50% {
+      border-top-color: #4caf50;
+      border-bottom-color: #4caf50;
+      border-left-color: #4caf50;
+      border-right-color: white;
+      opacity: 0.5;
     }
-    75%{
-        opacity: 0.75;
+    75% {
+      opacity: 0.75;
     }
-    100%{
-        border-color: #4caf50;
-        opacity: 1;
+    100% {
+      border-color: #4caf50;
+      opacity: 1;
     }
-
-}
+  }
+  
+  @keyframes shadowEffect {
+    0% {
+      box-shadow: 0 0 20px 10px rgba(76, 175, 80, 0.2);
+    }
+    25% {
+      box-shadow: 0 0 35px 15px rgba(76, 175, 80, 0.3);
+    }
+    50% {
+      box-shadow: 0 0 50px 20px rgba(76, 175, 80, 0.4);
+    }
+    75% {
+      box-shadow: 0 0 65px 25px rgba(76, 175, 80, 0.5);
+    }
+    100% {
+      box-shadow: 0 0 80px 30px rgba(76, 175, 80, 0.6);
+    }
+  }
 
 .smallbio {
     color: white;
