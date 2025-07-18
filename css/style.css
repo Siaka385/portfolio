@@ -756,6 +756,156 @@ span  {
     transform-origin: left;
 }
 
+/* Enhanced language tags animation */
+.languages {
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.languages span {
+    background: linear-gradient(135deg, #4caf50, #45a049);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    display: inline-block;
+    margin: 4px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInUp 0.6s ease forwards;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.languages span:hover {
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.4);
+}
+
+/* Staggered animation for language tags */
+.languages span:nth-child(1) { animation-delay: 0.1s; }
+.languages span:nth-child(2) { animation-delay: 0.2s; }
+.languages span:nth-child(3) { animation-delay: 0.3s; }
+.languages span:nth-child(4) { animation-delay: 0.4s; }
+.languages span:nth-child(5) { animation-delay: 0.5s; }
+.languages span:nth-child(6) { animation-delay: 0.6s; }
+.languages span:nth-child(7) { animation-delay: 0.7s; }
+.languages span:nth-child(8) { animation-delay: 0.8s; }
+.languages span:nth-child(9) { animation-delay: 0.9s; }
+.languages span:nth-child(10) { animation-delay: 1.0s; }
+.languages span:nth-child(11) { animation-delay: 1.1s; }
+.languages span:nth-child(12) { animation-delay: 1.2s; }
+
+@keyframes slideInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Enhanced project card animations */
+.project-card {
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(76, 175, 80, 0.1), transparent);
+    transition: left 0.5s ease;
+}
+
+.project-card:hover::before {
+    left: 100%;
+}
+
+/* Skill bars animation */
+.skill {
+    margin-bottom: 20px;
+}
+
+.progress {
+    background-color: #333;
+    border-radius: 10px;
+    height: 8px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, #4caf50, #45a049);
+    border-radius: 10px;
+    transition: width 2s ease-in-out;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: linear-gradient(
+        -45deg,
+        rgba(255, 255, 255, 0.2) 25%,
+        transparent 25%,
+        transparent 50%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0.2) 75%,
+        transparent 75%,
+        transparent
+    );
+    background-size: 50px 50px;
+    animation: move 2s linear infinite;
+}
+
+@keyframes move {
+    0% { background-position: 0 0; }
+    100% { background-position: 50px 50px; }
+}
+
+/* Enhanced floating animation for social icons */
+.floating {
+    animation: advancedFloat 4s ease-in-out infinite;
+}
+
+@keyframes advancedFloat {
+    0%, 100% {
+        transform: translateY(0) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-8px) rotate(1deg);
+    }
+    50% {
+        transform: translateY(-5px) rotate(0deg);
+    }
+    75% {
+        transform: translateY(-12px) rotate(-1deg);
+    }
+}
+
+/* Pulse animation for contact items */
+.contact-item {
+    animation: pulse 2s infinite;
+}
+
+.contact-item:nth-child(2) { animation-delay: 0.3s; }
+.contact-item:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.02); }
+}
+
 
 
 
