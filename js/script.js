@@ -120,8 +120,36 @@ window.onload = () => {
            btn.classList.add("moveup")
     }
 
+    // Add intersection observer for skill bars animation
+    const skillBars = document.querySelectorAll('.progress-bar');
+    const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const width = entry.target.style.width;
+                entry.target.style.width = '0%';
+                setTimeout(() => {
+                    entry.target.style.width = width;
+                }, 200);
+            }
+        });
+    }, { threshold: 0.5 });
 
+    skillBars.forEach(bar => skillObserver.observe(bar));
 
+    // Add scroll-triggered animations for language tags
+    const languageTags = document.querySelectorAll('.languages span');
+    const tagObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.animationPlayState = 'running';
+            }
+        });
+    }, { threshold: 0.3 });
+
+    languageTags.forEach(tag => {
+        tag.style.animationPlayState = 'paused';
+        tagObserver.observe(tag);
+    });
 
 //contact and email sending
     (function() {
